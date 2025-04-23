@@ -1,0 +1,93 @@
+/* a:link {
+    margin:2em;
+    color:rgb(194, 87, 45);
+    font-size:40px;
+}
+a:visited {
+    margin:2em;
+    color:rgb(238, 223, 11);
+    font-size:40px;
+}
+a:hover {
+    margin:2em;
+    color:white;
+    font-size:45px;
+}
+a:active {
+    margin:2em;
+    color:rgb(60, 63, 63);
+    font-size:45px;
+} */
+
+h1 {
+    font-family:'Times New Roman', Times, serif;
+}
+.title {
+    background-color:darkgoldenrod;
+    color:antiquewhite;
+    text-align: center;
+    font-size: 50px;
+    border-color: darkgoldenrod;
+    border-top: 10px;
+    border-bottom: 10px;
+}
+.jumbotron {
+    background-color:darkgoldenrod;
+}
+
+td > img {
+    width: 265px;
+}
+hr {
+    color:antiquewhite;
+}
+p {
+    color:antiquewhite;
+}
+td {
+    background-color:brown;
+    color:antiquewhite;
+}
+th {
+    background-color: darkred;
+    color: antiquewhite;
+}
+
+/* li > a {
+    text-align:center;
+    font-size:40px;
+} */
+h2 > ul {
+    background-color: goldenrod;
+    color: antiquewhite;
+}
+
+#small {
+    font-size:20;
+}
+table {
+    display: inline-block;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+.cliff {
+    background: url("https://images.pexels.com/photos/16115522/pexels-photo-16115522/free-photo-of-vertical-wall-of-a-rocky-cliff.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+.frontPanel {
+    background-color:black;
+    opacity: 85%;
+}
+.frontPanel div{
+    opacity: 100%;
+}
+.btn-group-vertical a{
+    background-color: darkgrey;
+}
+.thumbnail {
+    width: 100%;
+    height: 100%;
+    background: none;
+}
+ol{
+    background-color:gray;
+}
