@@ -55,6 +55,13 @@ th {
     color: antiquewhite;
 }
 
+.achievement > tr > td{
+    background-color: black;
+}
+.achievement > tr > td > img{
+    width: 150px;
+}
+
 /* li > a {
     text-align:center;
     font-size:40px;
@@ -92,4 +99,19 @@ table {
 }
 ol{
     background-color:gray;
+}
+
+
+/* path/to/custom-styles.css */
+input.form-control {
+    width: 300px;
+}
+.input-group-append .btn-secondary {
+    border-radius: 0 0.25rem 0.25rem 0;
+}
+#searchResults div {
+    padding: 10px;
+    background-color: #f9f9f9;
+    margin-top: 10px;
+    border: 1px solid #ddd;
 }

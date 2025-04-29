@@ -12,6 +12,9 @@
     <!-- Bootstrap JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     
+    <!-- Achievement JavaScript -->
+    <script src="myscripts.js"></script> 
+
     <link rel="stylesheet" type="text/css" href="styles.css">
     <title>Document</title>
     <style>
@@ -31,6 +34,7 @@
                 </div>
             </div>
             <nav class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container-fluid">
                 <div class="navbar-header">
                     <a class="navbar-brand" href="index.html"><span class="glyphicon glyphicon-king"></span>Hellsweeper VR</a>
                 </div>
@@ -66,6 +70,7 @@
                             </div>
                         </div>
                     </form> -->
+                </div>
                 </div>
             </nav>
             <div class="row">
@@ -113,118 +118,11 @@
                 </div>
             </div>
             <hr>
-            <!-- <div class="row">
-                <div class="col-sm-2">
-                    <table border="1">
-                        <thead>
-                            <tr>
-                                <b>
-                                    <th>Monster Hunter</th>
-                                </b>
-                            </tr>
-                            <tr>
-                                <b>
-                                    <th>Weapon</th>
-                                    <th>Type</th>
-                                    <th>Special Ability</th>
-                                </b>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><img src="image/Sword.webp"></td>
-                                <td>Melee</td>
-                                <td>Slash of Light</td>
-                            </tr>
-                            <tr>
-                                <td><img src="image/Mace.webp"></td>
-                                <td>Melee</td>
-                                <td>Transform to Flail</td>
-                            </tr>
-                            <tr>
-                                <td><img src="image/Bow.webp"></td>
-                                <td>Range</td>
-                                <td>Multi-shot</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="col-sm-2">
-                    <table border="1">
-                        <thead>
-                            <tr>
-                                <b>
-                                    <th>Doom Bringer</th>
-                                </b>
-                            </tr>
-                            <tr>
-                                <b>
-                                    <th>Weapon</th>
-                                    <th>Type</th>
-                                    <th>Special Ability</th>
-                                </b>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><img src="image/Pistol.webp"></td>
-                                <td>Range</td>
-                                <td>Ricosha bullets</td>
-                            </tr>
-                            <tr>
-                                <td><img src="image/Rifle.webp"></td>
-                                <td>Range</td>
-                                <td>Pirsing shot</td>
-                            </tr>
-                            <tr>
-                                <td><img src="image/Shotgun.webp"></td>
-                                <td>Range</td>
-                                <td>Homing bullets</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="col-sm-2">
-                    <table border="1">
-                        <thead>
-                            <tr>
-                                <b>
-                                    <th>Invoker</th>
-                                </b>
-                            </tr>
-                            <tr>
-                                <b>
-                                    <th>Weapon</th>
-                                    <th>Type</th>
-                                    <th>Special Ability</th>
-                                </b>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><img src="image/Fire.webp"></td>
-                                <td>Magic</td>
-                                <td>Flamethrower</td>
-                            </tr>
-                            <tr>
-                                <td><img src="image/Frost.webp"></td>
-                                <td>Magic</td>
-                                <td>Fire ice shards</td>
-                            </tr>
-                            <tr>
-                                <td><img src="image/Electric.webp"></td>
-                                <td>Magic</td>
-                                <td>Black hole</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div> -->
             <div class="page-header" id="achievements">
                 <h1>Achievements</h1>
             </div>
-<!-- 
 
+<!-- 
             <nav class="navbar navbar-inverse">
                 <div class="container-fluid">
                 <div class="navbar-header">
@@ -243,41 +141,24 @@
                         <li class="active"><a href="#">Link the First<span class="sr-only">(current)</span></a></li>
                         <li><a href="#">Link the Second</a></li>
                     </ul>
-            </nav>
+            </nav> -->
 
             
             <div class="container">
                 <table class="table table-bordered">
                     <thead>
                         <tr>
-                            <th>Header 1</th>
-                            <th>Header 2</th>
-                            <th>Actions</th>
+                            <th></th>
+                            <th>Name</th>
+                            <th>Discription</th>
                         </tr>
                     </thead>
                     <tbody id="dynamicContent">
                     </tbody>
                 </table>
-                <button class="btn btn-primary" onclick="addRow()">Add Row</button>
+                <!-- <button class="btn btn-primary" onclick="addRow()" disabled id="addBtn">Add Row</button> -->
             </div>
             
-            <script>
-            function addRow() {
-                let count = document.querySelectorAll("#dynamicContent tr").length;
-                $('#dynamicContent').append(`
-                    <tr class="collapse show" id="row${count}">
-                        <td>Data ${count+1}</td>
-                        <td>Data ${count+1}</td>
-                        <td><button class="btn btn-sm btn-success">Edit</button> <button class="btn btn-sm btn-danger" onclick="toggleCollapse(${count})">Toggle Collapse</button></td>
-                    </tr>
-                `);
-            }
-            
-            function toggleCollapse(rowId) {
-                $(`#row${rowId}`).collapse('toggle');
-            }
-            </script>
-             -->
 
             <div class="row">
                 <div class="col-sm-9">
@@ -291,136 +172,136 @@
                                 </b>
                             </tr>
                         </thead>
-                        <tbody class="">
+                        <tbody class="achievement">
                             <tr>
                                 <td><img src="image/Ach_ReportingForDuty.jpg"></td>
                                 <td>Reporting For Duty</td>
-                                <td></td>
+                                <td>Complete the tutorial.</td>
                             </tr>
                             <tr>
                                 <td><img src="image/Ach_FirstBlood.jpg"></td>
                                 <td>First Blood</td>
-                                <td></td>
+                                <td>Take out your first enemy.</td>
                             </tr>
                             <tr>
                                 <td><img src="image/Ach_DeathFromAbove.jpg"></td>
                                 <td>Death From Above</td>
-                                <td></td>
+                                <td>Kill an enemy while you are in a jump.</td>
                             </tr>
                             <tr>
                                 <td><img src="image/Ach_Deceit'sFall.jpg"></td>
                                 <td>Deceit's Fall</td>
-                                <td></td>
+                                <td>Defeat Deceit on Normal difficulty or higher.</td>
                             </tr>
                             <tr>
                                 <td><img src="image/Ach_SpinMeRightRound.jpg"></td>
                                 <td>Spin Me Right Round</td>
-                                <td></td>
+                                <td>Kill an enemy while you are in a somersault.</td>
                             </tr>
                             <tr>
                                 <td><img src="image/Ach_JuniorSweeper.jpg"></td>
                                 <td>Junior Sweeper</td>
-                                <td></td>
+                                <td>Reach Level 5.</td>
                             </tr>
                             <tr>
                                 <td><img src="image/Ach_GoodBoy.jpg"></td>
                                 <td>Good Boy</td>
-                                <td></td>
+                                <td>Have the Hellhound eat a Fire, Frost, or Volt ball.</td>
                             </tr>
                             <tr>
                                 <td><img src="image/Ach_Savagery'sPenance.jpg"></td>
                                 <td>Savagery's Penance</td>
-                                <td></td>
+                                <td>Defeat Savagery on Normal difficulty or higher.</td>
                             </tr>
                             <tr>
                                 <td><img src="image/Ach_Charon'sDelight.jpg"></td>
                                 <td>Charon's Delight</td>
-                                <td></td>
+                                <td>Purchase all items from the Shop in one go.</td>
                             </tr>
                             <tr>
                                 <td><img src="image/Ach_Corruption'sRuin.jpg"></td>
                                 <td>Corruption's Ruin</td>
-                                <td></td>
+                                <td>Defeat Corruption on Normal difficulty or higher.</td>
                             </tr>
                             <tr>
                                 <td><img src="image/Ach_WallRunner.jpg"></td>
                                 <td>Wall Runner</td>
-                                <td></td>
+                                <td>Kill an enemy while you are in a wallrun.</td>
                             </tr>
                             <tr>
                                 <td><img src="image/Ach_SecretsOfSuffering.jpg"></td>
                                 <td>Secrets of Suffering</td>
-                                <td></td>
+                                <td>Unlock 66 chests.</td>
                             </tr>
                             <tr>
                                 <td><img src="image/Ach_ThroughHellAndBack.jpg"></td>
                                 <td>Through Hell And Back</td>
-                                <td></td>
+                                <td>Complete Roguelike on any difficulty.</td>
                             </tr>
                             <tr>
                                 <td><img src="image/Ach_BlazingThroughHell.jpg"></td>
                                 <td>Blazing Through Hell</td>
-                                <td></td>
+                                <td>Complete a Roguelike run within 40 minutes.</td>
                             </tr>
                             <tr>
                                 <td><img src="image/Ach_Sweeper.jpg"></td>
                                 <td>Sweeper</td>
-                                <td></td>
+                                <td>Reach Level 12.</td>
                             </tr>
                             <tr>
                                 <td><img src="image/Ach_PowerSlide.jpg"></td>
                                 <td>Power Slide</td>
-                                <td></td>
+                                <td>Kill an enemy while you are in a slide.</td>
                             </tr>
                             <tr>
                                 <td><img src="image/Ach_SeniorSweeper.jpg"></td>
                                 <td>Senior Sweeper</td>
-                                <td></td>
+                                <td>Reach Level 18.</td>
                             </tr>
                             <tr>
                                 <td><img src="image/Ach_Hellsweeper.jpg"></td>
                                 <td>Hellsweeper</td>
-                                <td></td>
+                                <td>Reach Level 25.</td>
                             </tr>
                             <tr>
                                 <td><img src="image/Ach_ABloodySweep.jpg"></td>
                                 <td>A Bloody Sweep</td>
-                                <td></td>
+                                <td>Kill 6666 monsters.</td>
                             </tr>
                             <tr>
                                 <td><img src="image/Ach_TheInvoker.jpg"></td>
                                 <td>The Invoker</td>
-                                <td></td>
+                                <td>Complete a Roguelike run picking only the following skills : Fire, Frost, and Volt.</td>
                             </tr>
                             <tr>
                                 <td><img src="image/Ach_AnEndToDeceit.jpg"></td>
                                 <td>An End To Deceit</td>
-                                <td></td>
+                                <td>Defeat Deceit on Masochist difficulty.</td>
                             </tr>
                             <tr>
                                 <td><img src="image/Ach_AnEndToSavagery.jpg"></td>
                                 <td>An End To Savagery</td>
-                                <td></td>
+                                <td>Defeat Savagery on Masochist difficulty.</td>
                             </tr>
                             <tr>
                                 <td><img src="image/Ach_AnEndToCorruption.jpg"></td>
                                 <td>An End To Corruption</td>
-                                <td></td>
+                                <td>Defeat Corruption on Masochist difficulty.</td>
                             </tr>
                             <tr>
                                 <td><img src="image/Ach_BackWithAVengeance.jpg"></td>
                                 <td>Back With A Vengeance</td>
-                                <td></td>
+                                <td>Complete Roguelike on Masochist difficulty.</td>
                             </tr>
                             <tr>
                                 <td><img src="image/Ach_TheMonsterHunter.jpg"></td>
                                 <td>The Monster Hunter</td>
-                                <td></td>
+                                <td>Complete a Roguelike run picking only the following skills : Sword, Mace, and Bow.</td>
                             </tr>
                             <tr>
                                 <td><img src="image/Ach_TheDoomBringer.jpg"></td>
                                 <td>The Doom Bringer</td>
-                                <td></td>
+                                <td>Complete a Roguelike run picking only the following skills : Pistol, Rifle, and Shotgun.</td>
                             </tr>
                         </tbody>
                     </table>
