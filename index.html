@@ -32,58 +32,66 @@
         </div>
         <nav class="navbar navbar-inverse navbar-fixed-top">
             <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#links" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span> <!-- only appears for screen readers -->
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
                 <a class="navbar-brand" href="index.html"><span class="glyphicon glyphicon-king"></span>Hellsweeper VR</a>
             </div>
-            <ul class="nav navbar-nav" id="navLinks">
-                <li><a href="about.html">About</a></li>
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        Weapons
-                        <span class="caret"></span>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a href="weaponClass/melee.html">Melee</a></li>
-                        <li><a href="weaponClass/range.html">Range</a></li>
-                        <li><a href="weaponClass/magic.html">Magic</a></li>
-                    </ul>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                </li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <div class="col-sm-3 col-md-3 pull-right">
-                <!-- <div class="search-container">
-                    <input type="text" id="searchInput" placeholder="Search..." onkeyup="searchItems()">
-                    <div id="searchResults" class="search-results"></div>
-                </div> -->
-            
-                <!-- <script src="script.js"></script>
-                <form class="navbar-form" role="search">
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
-                        <div class="input-group-btn">
-                            <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+            <div class="collapse navbar-collapse" id="links">
+                <ul class="nav navbar-nav" id="navLinks">
+                    <li><a href="about.html">About</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            Weapons
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="weaponClass/melee.html">Melee</a></li>
+                            <li><a href="weaponClass/range.html">Range</a></li>
+                            <li><a href="weaponClass/magic.html">Magic</a></li>
+                        </ul>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="col-sm-3 col-md-3 pull-right">
+                    <!-- <div class="search-container">
+                        <input type="text" id="searchInput" placeholder="Search..." onkeyup="searchItems()">
+                        <div id="searchResults" class="search-results"></div>
+                    </div> -->
+                
+                    <!-- <script src="script.js"></script>
+                    <form class="navbar-form" role="search">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
+                            <div class="input-group-btn">
+                                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                            </div>
                         </div>
-                    </div>
-                </form> -->
+                    </form> -->
 
-                <div class="container mt-5">
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Search..." id="searchInput">
-                        <span class="input-group-append">
-                            <button class="btn btn-secondary" type="button">
-                                <i class="fas fa-search"></i>
-                            </button>
-                        </span>
+                    <div class="container mt-5">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Search..." id="searchInput">
+                            <span class="input-group-append">
+                                <button class="btn btn-secondary" type="button">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </span>
+                        </div>
+                    
+                        <!-- Search Results -->
+                        <div id="searchResults"></div>
                     </div>
-                
-                    <!-- Search Results -->
-                    <div id="searchResults"></div>
+                    
+                    <script src="path/to/jquery.min.js"></script>
+                    <script src="path/to/bootstrap.bundle.min.js"></script>
+                    <script src="path/to/custom-scripts.js"></script>
                 </div>
-                
-                <script src="path/to/jquery.min.js"></script>
-                <script src="path/to/bootstrap.bundle.min.js"></script>
-                <script src="path/to/custom-scripts.js"></script>
             </div>
         </nav>
         <p><i>This is an unofficial website</i></p>
